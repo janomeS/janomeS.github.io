@@ -57,7 +57,7 @@ header h1{
 }
 header p{
     font-size:100%;
-    color:#313131;
+    color:#5C5959;
     float: left;
 }
 
@@ -67,7 +67,7 @@ header p{
     width: 60%;
     margin-left: 20%;
     overflow: hidden;
-    background-color: #313131;
+    background-color: #5C5959;
     margin-bottom: 20px;
     letter-spacing: 10px;
     line-height: 300px;
