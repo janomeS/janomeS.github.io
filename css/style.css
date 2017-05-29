@@ -3,8 +3,7 @@
 
 body{
 font: 14px/1.6 "Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;
-margin:0;
-color:#313131;
+background-color:#313131;
 }
 
 img{
@@ -40,7 +39,7 @@ header{
 }
 header h1{
     font-size:120%;
-    color:#5C5959;
+    color:#CCC;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 20px;
@@ -49,10 +48,6 @@ header h1{
     padding-right: 20px;
     border-left:6px solid #CCC;
     border-bottom:1px solid #CCC;
-/*文字の囲い*/
-/*    border:1px solid #313131; */
-/*囲いの角の丸み*/
-/*    border-radius: 5px;*/
     letter-spacing: 3px;
     font-weight:600;
     float: left;
@@ -63,6 +58,11 @@ header p{
     float: left;
 }
 
+/*****CONTENTS*****/
+
+#contents{
+	padding-bottom:30px;
+	}
 /*****BRANDING*****/
 #branding{
     display: block;
@@ -71,133 +71,101 @@ header p{
     overflow: hidden;
     background-color: #5C5959;
     margin-bottom: 20px;
-    letter-spacing: 10px;
-    line-height: 300px;
+    letter-spacing: 2px;
+    line-height: 30px;
 }
-#branding p{
-    color: #fff;
-    font-size: 120%;
-    padding-left: 3%;
-}
-
-/*****NAV*****/
-nav{
-    width: 100%;
-    border-top: 1px solid orange;
-    border-bottom: 1px solid orange;
-    margin-bottom: 5px;
+#text{
+    display: block;
+    width: 80%;
+    margin-left: 20px;
     overflow: hidden;
-}
-nav ul{
-    width: 60%;
-    margin-left: 20%;
-}
-nav li{
-    width: calc(25% - 2px);
-    font-size: 110%;
-    letter-spacing: 5px;
-    font-weight: 400;
-    line-height: 45px;
-    border-left: 1px solid orange;
-    color: #313131;
-    cursor: pointer;
-    text-align: center;
-    float: left;
-}
-nav li:last-child{
-    border-right: 1px solid orange;
+	padding-top:1%;
+    background-color: #5C5959;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    line-height: 20px;
+	color: #fff
 }
 
-nav li:hover{
-    background-color: orange;
-    transition: background-color 0.5s ease-out;
-    color: #fff;
+
+
+
+
+/*****image size*****/
+img{
+display: block;
 }
 
-/*****ARTICLE*****/
-article{
+#Cooking{
     display: block;
     width: 60%;
     margin-left: 20%;
+    overflow: hidden;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    line-height: 20px;
+	color: #fff
+}
+
+#Cooking p{
+	font-size:120%;
+    color:#CCC;
+	margin-top: 5px;
     margin-bottom: 20px;
-    overflow: hidden;
-}
-section{
-    width: 41%;
-    padding: 2.5%;
-    margin: 1.5%;
-    background-color: #f9f9f9;
-    overflow: hidden;
-    float: left;
-}
-section .date{
-    font-size: 60%;
-    color: orange;
-    border: 1px solid orange;
-    padding-top:3px;
-    padding-bottom: 3px;
-    padding-right: 6px;
-    padding-left: 6px;
-    letter-spacing: 5px;
-    float: left;
-}
-section h1{
-    width: 100%;
-    font-size: 150%;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-left:6px solid #CCC;
+    border-bottom:1px solid #CCC;
     letter-spacing: 3px;
-    padding-bottom:2px;
-    padding-top: 10px;
-    border-bottom: 1px solid #bababa;
-    margin-bottom: 15px;
-    float: left;
+}
+#Network{
+    display: block;
+    width: 60%;
+    margin-left: 20%;
+    overflow: hidden;
+    letter-spacing: 1px;
+    line-height: 20px;
+	color: #fff
+}
+#Network p{
+	font-size:120%;
+    color:#CCC;
+	margin-top: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-left:6px solid #CCC;
+    border-bottom:1px solid #CCC;
+    letter-spacing: 3px;
+}
+img.example1 {
+margin-left: 20%;
+margin-top: 30px;
+margin-bottom: 20px;
+width: 100px;
+height: 100px;
 }
 
-section p{
-    font-size: 100%;
-    color: #313131;
-    letter-spacing: 3px;
-    line-height: 200%;
-    margin-bottom: 10px;
-    float: left;
+img.example2 {
+margin-left: 20%;
+margin-top: 30px;
+width: 100px;
+height: 100px;
 }
 
-section .btn{
-    color: #fff;
-    border: 1px solid orange;
-    background-color: orange;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
-    border-radius: 5px;
-    letter-spacing: 5px;
-    text-decoration: none;
-    overflow: hidden;
-    float: right;
-}
-section .btn:hover{
-    background-color: #fff;
-    border: 1px solid orange;
-    transition: background-color 0.5s ease-out;
-    transition: color 0.5s ease-out;
-    transition: border 0.5s ease-out;
-    color: orange;
-    overflow: hidden;
-}
 
 footer{
-    /*追記ここから*/
-    position:absolute;
+  	background-color: #313131;
+    position: fixed;
     bottom:0;
-    /*ここまで*/
+	height: 1em;
     font-size: 80%;
     width: 100%;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #313131;
+    text-align: right;
+	padding-bottom: 10px;
+	overflow: hidden;
 }
 footer address{
-    color: #fff;
-    letter-spacing: 5px;
+    color: #CCC;
+    letter-spacing: 2px;
 }
